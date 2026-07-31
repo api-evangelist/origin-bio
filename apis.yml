@@ -1,7 +1,31 @@
 aid: origin-bio
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/origin-bio.png
 name: Origin Bio
-description: Origin Bio is a company surfaced as a portfolio company of y-combinator and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Origin Bio is a cancer-biology research company that generates spatial,
+  molecular, and functional maps from patient tumor samples to study cancer in
+  its native tissue context. Its platform combines a spatial genomics pipeline
+  that maps gene expression while preserving tissue architecture, tissue
+  phenotyping that grounds molecular findings in histology and protein
+  measurements, and functional response testing that runs ex vivo drug and
+  perturbation experiments on precision-cut tumor slices. On top of this
+  proprietary sequencing and spatial-transcriptomics data the company trains
+  multimodal AI models for therapeutic target discovery, treatment-response
+  prediction, and patient stratification. Origin Bio is a Y Combinator
+  (Winter 2026) company. As of this profile the company publishes no
+  public-facing API, developer documentation, or SDKs; this record is
+  maintained in the API Evangelist network as a company profile.
 url: https://raw.githubusercontent.com/api-evangelist/origin-bio/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +35,31 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Biotechnology
+- Cancer Research
+- Spatial Genomics
+- Transcriptomics
+- Artificial Intelligence
+- Life Sciences
+- Y Combinator
 apis: []
+common:
+- type: DomainSecurity
+  url: security/origin-bio-domain-security.yml
+- type: Website
+  url: https://origin.bio/
+- type: Company
+  url: https://www.ycombinator.com/companies/origin-bio
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
